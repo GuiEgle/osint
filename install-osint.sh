@@ -99,6 +99,9 @@ _install_git 'https://github.com/Vault-Cyber-Security/getrails-tool.git'
 _install_pip 'pip3' '-r /workspace/getrails-tool/requirements.txt'
 # Install SocialScan
 _install_pip 'pip3' 'socialscan'
+#Install Infoga
+_install_git 'https://github.com/m4ll0k/Infoga.git'
+_run 'python3 /workspace/Infoga/setup.py install'
 
 # Install editor
 _run 'apk add vim'

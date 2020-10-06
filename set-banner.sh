@@ -20,7 +20,8 @@ banner="
 \t$bwhite Maryam$end: Is an Open-source intelligence(OSINT) and Web-based Footprinting modular/tool framework based on the Recon-ng and written in Python.
 \t$bwhite Metabigor$end: Is Intelligence tool, its goal is to do OSINT tasks and more but without any API key.
 \t$bwhite Getrails$end: Tool of OSINT and Dork hacking that work with Google, Duckduckgo and onion
-\t$bwhite SocialScan$end: socialscan offers accurate and fast checks for email address and username usage on online platforms.
+\t$bwhite SocialScan$end: offers accurate and fast checks for email address and username usage on online platforms.
+\t$bwhite Infoga$end: is a tool gathering email accounts informations (ip,hostname,country,...) from different public source (search engines, pgp key servers and shodan) and check if emails was leaked using haveibeenpwned.com API.
 
 \ttype:$bwhite tools$end to show this message
 "

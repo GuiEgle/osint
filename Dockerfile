@@ -13,8 +13,6 @@ RUN pip3 install pip --upgrade
 RUN pip2 install pip --upgrade
 ENV PATH /usr/local/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.local/bin:/packages/src:/usr/local/go/bin:/opt/osint:/go/bin
 
-# Copy scripts
-COPY . /opt/osint
 WORKDIR /workspace
 
 ## Install and Setup Tools
@@ -102,12 +100,20 @@ RUN git clone https://github.com/Vault-Cyber-Security/getrails-tool.git && \
 # Install SocialScan
 RUN pip3 install socialscan
 
+#Install Infoga
+RUN git clone https://github.com/m4ll0k/Infoga.git && \
+    cd Infoga && \
+    python3 setup.py install
+
 # Install Datasploit
 #RUN git clone https://github.com/dvopsway/datasploit.git && \
-#    pip install --upgrade --force-reinstall -r /workspace/datasploit/requirements.txt --user
+#    pip2 install --upgrade --force-reinstall -r /workspace/datasploit/requirements.txt --user
 
 # Install Karma
 #RUN pip3 install git+https://github.com/decoxviii/karma.git --upgrade --user
+
+# Copy scripts
+COPY . /opt/osint
 
 RUN bash /opt/osint/set-banner.sh
 
