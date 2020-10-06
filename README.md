@@ -32,3 +32,4 @@ The image was wrote for Security Osint with tools:
   -  OWASP Maryam: __Is an Open-source intelligence(OSINT) and Web-based Footprinting modular/tool framework based on the Recon-ng and written in Python.__
   -  Metabigor: __Is Intelligence tool, its goal is to do OSINT tasks and more but without any API key.__
   -  Getrails: __Tool of OSINT and Dork hacking that work with Google, Duckduckgo and onion__
+  - SocialScan: __socialscan offers accurate and fast checks for email address and username usage on online platforms.__
